@@ -489,6 +489,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2.5rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -499,6 +503,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-1\/2 {
@@ -572,14 +580,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: hsl(216 12% 8% / var(--tw-bg-opacity));
 }
 
-.bg-darkBlue {
+.bg-mediumGrey {
   --tw-bg-opacity: 1;
-  background-color: hsl(213 19% 18% / var(--tw-bg-opacity));
+  background-color: hsl(216 12% 54% / var(--tw-bg-opacity));
 }
 
 .bg-orange {
   --tw-bg-opacity: 1;
   background-color: hsl(25 97% 53% / var(--tw-bg-opacity));
+}
+
+.bg-darkBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(213 19% 18% / var(--tw-bg-opacity));
+}
+
+.bg-lightGrey {
+  --tw-bg-opacity: 1;
+  background-color: hsl(217 12% 63% / var(--tw-bg-opacity));
 }
 
 .p-6 {
@@ -632,6 +650,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .tracking-wider {
   letter-spacing: 0.05em;
 }
@@ -641,7 +663,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
-.text-lightGray {
+.text-lightGrey {
   --tw-text-opacity: 1;
   color: hsl(217 12% 63% / var(--tw-text-opacity));
 }
