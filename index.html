@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+			rel="stylesheet"
+			defer
+		/>
+		<link href="output.css" rel="stylesheet" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<script src="script.js" defer></script>
+		<title>Frontend Mentor | Interactive rating component</title>
+	</head>
+	<body>
+		<main
+			class="bg-veryDarkBlue w-screen h-screen flex justify-center items-center"
+		>
+			<div class="w-80 p-6 bg-darkBlue rounded-xl">
+				<div id="rating" class="flex flex-col space-y-6">
+					<div class="flex flex-col space-y-4 items-start">
+						<div class="rounded-full backdrop-brightness-125 p-3 w-10 h-10">
+							<img
+								src="images/icon-star.svg"
+								alt="star icon"
+								class="w-full h-full"
+							/>
+						</div>
+						<h1 class="text-2xl font-bold text-white">How did we do?</h1>
+						<p class="text-sm text-lightGray">
+							Please let us know how we did with your support request. All
+							feedback is appreciated to help us improve our offering!
+						</p>
+					</div>
+					<div class="flex flex-col space-y-4">
+						<div
+							id="btns-holder"
+							class="flex flex-row justify-between items-center"
+						>
+							<button
+								value="1"
+								class="rounded-full backdrop-brightness-125 w-10 h-10 text-sm text-lightGray hover:backdrop-brightness-150"
+							>
+								1
+							</button>
+							<button
+								value="2"
+								class="rounded-full backdrop-brightness-125 w-10 h-10 text-sm text-lightGray hover:backdrop-brightness-150"
+							>
+								2
+							</button>
+							<button
+								value="3"
+								class="rounded-full backdrop-brightness-125 w-10 h-10 text-sm text-lightGray hover:backdrop-brightness-150"
+							>
+								3
+							</button>
+							<button
+								value="4"
+								class="rounded-full backdrop-brightness-125 w-10 h-10 text-sm text-lightGray hover:backdrop-brightness-150"
+							>
+								4
+							</button>
+							<button
+								value="5"
+								class="rounded-full backdrop-brightness-125 w-10 h-10 text-sm text-lightGray hover:backdrop-brightness-150"
+							>
+								5
+							</button>
+						</div>
+						<button
+							id="submit-btn"
+							class="bg-orange text-white text-md tracking-wider py-3 rounded-full flex items-center justify-center hover:brightness-75"
+						>
+							SUBMIT
+						</button>
+					</div>
+				</div>
+				<div id="thank" class="hidden flex-col space-y-6">
+					<div class="flex flex-col space-y-5 items-center">
+						<img src="images/illustration-thank-you.svg" alt="" class="w-1/2" />
+						<p
+							id="placeholder"
+							class="backdrop-brightness-125 text-orange text-sm px-2 py-1.5 rounded-full align-middle"
+						></p>
+					</div>
+					<div class="space-y-2.5 text-center">
+						<h2 class="text-2xl text-white">Thank you!</h2>
+						<p class="text-sm text-lightGray">
+							We appreciate you taking the time to give a rating. If you ever
+							need more support, don't hesitate to get in touch!
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
